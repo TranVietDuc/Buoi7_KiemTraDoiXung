@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function palindrome(sin){
+        for ( let i = 0, j = sin.length -1 ; i<j; i++, j--)
+        {
+           if (sin[i] != sin[j]) return "It is not palindrome";
+        }
+        return "It is a palindrome";
+    }
+    while(1) {
+        var arr = prompt("Insert a string to check palindrome");
+        alert("Result: " + palindrome(arr));
+    }
+</script>
+
+</body>
+</html>
